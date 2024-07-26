@@ -33,9 +33,9 @@ android {
 }
 
 dependencies {
-    implementation(project(":domain"))
-    implementation (libs.hilt.android)
-    implementation(libs.hilt)
+    //implementation(project(":domain"))
+    //implementation (libs.hilt.android)
+    //implementation(libs.hilt)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

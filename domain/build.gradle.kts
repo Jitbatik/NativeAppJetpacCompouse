@@ -10,6 +10,6 @@ java {
 
 dependencies {
 
-    implementation (libs.hilt.android)
-    implementation(libs.hilt)
+    //implementation (libs.hilt.android)
+    //implementation(libs.hilt)
 }
