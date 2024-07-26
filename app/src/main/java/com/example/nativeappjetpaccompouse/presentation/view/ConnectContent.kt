@@ -1,5 +1,6 @@
 package com.example.nativeappjetpaccompouse.presentation.view
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -57,7 +58,6 @@ fun ConnectContent() {
                 Text(text = "Сканировать")
             }
         }
-
     }
 }
 
@@ -66,7 +66,10 @@ fun DeviceCard(device: Device) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(8.dp) // Внешние отступы карточки
+            .padding(8.dp)
+            .clickable {
+
+            }
     ) {
         Column(
             modifier = Modifier.padding(16.dp) // Внутренние отступы карточки

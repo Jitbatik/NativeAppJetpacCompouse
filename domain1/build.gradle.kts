@@ -1,19 +1,16 @@
 plugins {
-    alias(libs.plugins.android.library)
+    id ("com.android.library")
     alias(libs.plugins.jetbrains.kotlin.android)
-    alias(libs.plugins.kotlin.kapt)
-    alias(libs.plugins.dagger.hilt.plugin)
 }
 
 android {
-    namespace = "com.example.di"
+    namespace = "com.example.domain1"
     compileSdk = 34
 
     defaultConfig {
-        minSdk = 26
+        minSdk = 24
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
@@ -35,10 +32,6 @@ android {
 }
 
 dependencies {
-    implementation(project(":domain1"))
-    implementation(project(":data"))
-    implementation (libs.hilt.android)
-    implementation(libs.hilt)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

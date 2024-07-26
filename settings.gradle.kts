@@ -22,5 +22,5 @@ dependencyResolutionManagement {
 rootProject.name = "NativeAppJetpacCompouse"
 include(":app")
 include(":data")
-include(":domain")
 include(":di")
+include(":domain1")
